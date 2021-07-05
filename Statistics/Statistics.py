@@ -3,6 +3,7 @@ from CsvReader import CsvReader
 from Statistics.Median import median
 from Statistics.Mean import mean
 from Statistics.Mode import mode
+from Statistics.Variance import variance
 
 
 class Statistics(Calculator):
@@ -22,4 +23,8 @@ class Statistics(Calculator):
 
     def mode(self):
         self.result = mode(self.data)
+        return self.result
+
+    def variance(self):
+        self.result = variance(self.data)
         return self.result
