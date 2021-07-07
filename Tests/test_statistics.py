@@ -25,19 +25,19 @@ class MyTestCase(unittest.TestCase):
         #self.statistics = Statistics(Calculator)
 
     def test_mean_calculator(self):
-        self.assertEqual(2, mean.mean(self.testing))
+        self.assertEqual(2, mean(self.testing))
 
     def test_median_calculator(self):
-        self.assertEqual(2, median.median(self.testing1))
+        self.assertEqual(2, median(self.testing1))
 
     def test_mode_calculator(self):
-        self.assertEqual(2, mode.mode(self.testing2))
+        self.assertEqual(2, mode(self.testing2))
 
     def test_standard_deviation_calculator(self):
-        self.assertEqual(2, standard_deviation.standard_deviation(self.testing3))
+        self.assertEqual(2, standard_deviation(self.testing3))
 
     def test_variance_calculator(self):
-        self.assertEqual(2, variance.variance(self.testing4))
+        self.assertEqual(2, variance(self.testing4))
 
     '''
     def test_instantiate_calculator(self):
