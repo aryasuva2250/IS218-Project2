@@ -24,8 +24,8 @@ class MyTestCase(unittest.TestCase):
         #self.testData = randint(0, 10, 20)
         self.statistics = Statistics()
 
-    #def test_instantiate_calculator(self):
-     #   self.assertIsInstance(self.statistics, Statistics)
+    def test_instantiate_calculator(self):
+        self.assertIsInstance(self.statistics, Statistics)
 
     def test_mean_calculator(self):
         statistics = Statistics()
