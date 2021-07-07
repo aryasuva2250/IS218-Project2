@@ -1,7 +1,7 @@
 import unittest
 import sys
 from Calculator.Calculator import Calculator
-from CsvReader import CsvReader
+from CsvReader.CsvReader import CsvReader
 from pprint import pprint
 
 
