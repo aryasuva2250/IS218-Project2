@@ -1,5 +1,5 @@
 from Calculator.Calculator import Calculator
-from CsvReader import CsvReader
+from CsvReader.CsvReader import CsvReader
 from Statistics.Median import median
 from Statistics.Mean import mean
 from Statistics.Mode import mode

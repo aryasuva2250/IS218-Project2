@@ -1,6 +1,6 @@
 from RandomGenerator import random_generator
-from Calculator import Calculator
-from Statistics import Statistics
+from Calculator.Calculator import Calculator
+from Statistics.Statistics import Statistics
 import random
 
 class PopulationSampling:

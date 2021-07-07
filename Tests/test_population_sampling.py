@@ -17,7 +17,7 @@ class PopulationSamplingTestCase(unittest.TestCase):
 
     def test_simple_random_sampling(self):
         testing = self.randomGenerator.random_list(0, 15, 50, 2)
-        result = self.populationSampling.simple_random_sampling(self, testing, 10, 5)
+        result = self.populationSampling.simple_random_sampling(testing, 10, 5)
         self.assertEqual(self.populationSampling.simple_random_sampling(self, testing, 10, 5), result)
         testing.clear()
 
