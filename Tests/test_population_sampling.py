@@ -1,19 +1,19 @@
 import unittest
 
-from RandomGenerator import random_generator
-from PopulationsSampling import population_sampling
+from RandomGenerator.random_generator import RandomGenerator
+from PopulationsSampling.population_sampling import PopulationSampling
 
 class PopulationSamplingTestCase(unittest.TestCase):
 
     def setUp(self) -> None:
-        self.randomGenerator = random_generator()
-        self.populationSampling = population_sampling()
+        self.randomGenerator = RandomGenerator()
+        self.populationSampling = PopulationSampling()
 
     def test_instantiate_random_generator(self):
-        self.assertIsInstance(self.randomGenerator, random_generator)
+        self.assertIsInstance(self.randomGenerator, RandomGenerator)
 
     def test_instantiate_population_sampling(self):
-        self.assertIsInstance(self.populationSampling, population_sampling)
+        self.assertIsInstance(self.populationSampling, PopulationSampling)
 
     def test_simple_random_sampling(self):
         testing = self.randomGenerator.random_list(self, 0, 15, 50, 2)
