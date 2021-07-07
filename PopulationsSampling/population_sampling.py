@@ -17,12 +17,12 @@ class PopulationSampling:
         # x = random numbers
         # y = seed
         rand = PopulationSampling()
-        sample = rand.choice(self, l, x, y)
+        sample = rand.choice(l, x, y)
         return sample
 
     def confidence_interval(self, l):
         #95% confidence interval
-        stats = Statistics()
+        stats = Statistics(Calculator)
         calculator = Calculator()
         standard_dev = stats.standard_deviation(l)
         x = len(l)
@@ -32,7 +32,7 @@ class PopulationSampling:
         return confidence_interval
 
     def margin_error(self, l):
-        stats = Statistics()
+        stats = Statistics(Calculator)
         calculator = Calculator()
         standard_dev = stats.standard_deviation(l)
         x = len(l)
