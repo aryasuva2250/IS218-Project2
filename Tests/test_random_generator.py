@@ -11,16 +11,16 @@ class RandomGeneratorTest(unittest.TestCase):
 
     def test_random_num_without_seed(self):
         random_generator = RandomGenerator()
-        print(random_generator.random_num(self, 0, 100))
+        print(random_generator.random_num(0, 100))
 
     def test_random_num_with_seed(self):
         random_generator = RandomGenerator()
-        r = random_generator.random_seed(self, 0, 100, 10)
+        r = random_generator.random_seed(0, 100, 10)
         self.assertEqual(random_generator.random_seed(self, 0, 100, 10), r)
 
     def test_random_list(self):
         random_generator = RandomGenerator()
-        r = random_generator.random_list(self, 0, 100, 10, 10)
+        r = random_generator.random_list(0, 100, 10, 10)
         self.assertEqual(random_generator.random_list(self, 0, 100, 10, 5), r)
 
 if __name__ == '__main__':
