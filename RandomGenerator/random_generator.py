@@ -18,3 +18,4 @@ class RandomGenerator:
         for r in range(n):
             list_of_random_numbers.append(random.randrange(x, y))
         return list_of_random_numbers
+
