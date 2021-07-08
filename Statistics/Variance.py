@@ -12,6 +12,7 @@ def variance(x):
     #result = Division.division(len(x), sum(Square.square((Subtraction.subtraction(x_mean, x)))))
     return result
     '''
+    '''
     x_mean = mean(x)
     for value in x:
         numberator1 = Subtraction.subtraction(x_mean, value)
@@ -20,4 +21,15 @@ def variance(x):
         denominator = Subtraction.subtraction(1, (len(x)))
         result = Division.division(denominator, numerator3)
         return result
+    '''
+    t = sum(x)
+    length = len(x)
+    s = []
+    for value in x:
+        s.append(Square.square(value))
+    total = sum(s)
+    num = Subtraction.subtraction(total, Division.division(t), length)
+    den = Subtraction.subtraction(length, 1)
+    return round(Division.division(den, num), 2)
+
     #return statistics.variance(x)
