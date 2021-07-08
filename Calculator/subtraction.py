@@ -5,5 +5,5 @@ class Subtraction:
         pass
     @staticmethod
     def subtraction(a, b):
-        result = int(b) - int(a)
-        return int(result)
+        result = float(b) - float(a)
+        return result
