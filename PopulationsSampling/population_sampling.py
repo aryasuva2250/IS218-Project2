@@ -32,7 +32,7 @@ class PopulationSampling:
         return confidence_interval
 
     def margin_error(self, l):
-        stats = Statistics(Calculator)
+        stats = Statistics()
         calculator = Calculator()
         standard_dev = stats.standard_deviation(l)
         x = len(l)
