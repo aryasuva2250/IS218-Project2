@@ -28,7 +28,7 @@ def variance(x):
     for value in x:
         s.append(Square.square(value))
     total = sum(s)
-    num = Subtraction.subtraction(total, Division.division(t), length)
+    num = Subtraction.subtraction(total, Division.division(t, length))
     den = Subtraction.subtraction(length, 1)
     return round(Division.division(den, num), 2)
 
