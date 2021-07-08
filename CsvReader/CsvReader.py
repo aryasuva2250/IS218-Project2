@@ -22,8 +22,13 @@ class CsvReader:
     def clear_data(self):
         self.data.clear()
 
-    def return_data_as_objects(self, class_name):
+    def int_con(r):
+        for key in r:
+            r[key] = int(r[key])
+        return r
+
+    def return_data_as_objects(self):
         objects = []
         for row in self.data:
-            objects.append(ClassFactory(class_name, row))
+            objects.append(self.int_con(row))
         return objects
