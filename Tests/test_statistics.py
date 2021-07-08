@@ -35,10 +35,10 @@ class MyTestCase(unittest.TestCase):
         self.assertEqual(5, mode(self.testing2))
 
     def test_standard_deviation_calculator(self):
-        self.assertEqual(2, standard_deviation(self.testing3))
+        self.assertEqual(3.60555128, standard_deviation(self.testing3))
 
     def test_variance_calculator(self):
-        self.assertEqual(2, variance(self.testing4))
+        self.assertEqual(7.428571428571429, variance(self.testing4))
 
     '''
     def test_instantiate_calculator(self):
