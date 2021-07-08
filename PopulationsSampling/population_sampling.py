@@ -22,7 +22,7 @@ class PopulationSampling:
 
     def confidence_interval(self, l):
         #95% confidence interval
-        stats = Statistics(Calculator)
+        stats = Statistics()
         calculator = Calculator()
         standard_dev = stats.standard_deviation(l)
         x = len(l)

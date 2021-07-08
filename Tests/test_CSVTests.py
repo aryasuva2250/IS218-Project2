@@ -34,7 +34,7 @@ class MyTestCase(unittest.TestCase):
             print('DivideByZeroError')
 
     def test_square(self):
-        self.assertEqual(self.Calculator.square(2), 4)
+        self.assertEqual(self.Calculator.squaring(2), 4)
         self.assertEqual(self.Calculator.result, 4)
 
     def test_square_root(self):
