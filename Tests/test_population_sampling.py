@@ -29,7 +29,7 @@ class PopulationSamplingTestCase(unittest.TestCase):
 
     def test_margin_error(self):
         testing = [5, 6, 3, 5, 1, 3, 7, 3]
-        self.assertEqual(round(self.populationSampling.margin_error(testing), 6), 1.83452)
+        self.assertEqual(round(self.populationSampling.margin_error(testing), 6), 2.829279)
         testing.clear()
 
 if __name__ == '__main__':
