@@ -24,7 +24,7 @@ class PopulationSamplingTestCase(unittest.TestCase):
 
     def test_confidence_interval(self):
         testing = [5, 6, 3, 5, 1, 3, 7, 3]
-        self.assertEqual(self.populationSampling.confidence_interval(testing), [5.482802, 2.767198])
+        self.assertEqual(self.populationSampling.confidence_interval(testing), [7.466355, 0.783645])
         testing.clear()
 
     def test_margin_error(self):
