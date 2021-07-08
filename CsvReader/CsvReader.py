@@ -25,7 +25,7 @@ class CsvReader:
     @staticmethod
     def int_con(r):
         for key in r:
-            r[key] = int(r[key])
+            r[key] = r[key]
         return r
 
     def return_data_as_objects(self):

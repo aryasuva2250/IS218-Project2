@@ -6,7 +6,7 @@ from Statistics.Mode import mode
 from Statistics.Variance import variance
 from Statistics.Standard_Deviation import standard_deviation
 
-class Statistics(Calculator):
+class Statistics():
     data = []
 
     def __init__(self):
