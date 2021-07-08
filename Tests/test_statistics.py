@@ -29,10 +29,10 @@ class MyTestCase(unittest.TestCase):
         self.assertEqual(3.0, mean(self.testing))
 
     def test_median_calculator(self):
-        self.assertEqual(2, median(self.testing1))
+        self.assertEqual(3, median(self.testing1))
 
     def test_mode_calculator(self):
-        self.assertEqual(2, mode(self.testing2))
+        self.assertEqual(5, mode(self.testing2))
 
     def test_standard_deviation_calculator(self):
         self.assertEqual(2, standard_deviation(self.testing3))
