@@ -1,4 +1,3 @@
-import subtraction
 from Calculator.addition import addition
 from Calculator.multiplication import multiplication
 from Calculator.subtraction import Subtraction
