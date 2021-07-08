@@ -1,2 +1,3 @@
 def subtraction(a, b):
-    return float(b) - float(a)
+    result = b - a
+    return result
