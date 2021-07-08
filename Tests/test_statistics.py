@@ -17,8 +17,9 @@ class MyTestCase(unittest.TestCase):
 
         self.testing = [1, 2, 3, 4, 5]
         self.testing1 = [2, 2, 4, 6, 9, 1]
-        self.testing3 = [1, 10, 5, 4, 5]
-        self.testing4 = [1, 8, 6,]
+        self.testing2 = [1, 10, 5, 4, 5]
+        self.testing3 = [1, 8, 6,]
+        self.testing4 = [1, 5, 2, 5, 2, 5, 7, 9]
 
         #seed(5)
         #self.testData = randint(0, 10, 20)
