@@ -1,9 +1,10 @@
 from Calculator.addition import addition
-from Calculator.multiplication import multiplication
 from Calculator.subtraction import Subtraction
 from Calculator.division import division
 from Calculator.square import square
 from Calculator.square_root import square_root
+from multiplication import multiplication
+
 
 class Calculator:
 
