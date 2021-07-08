@@ -22,6 +22,7 @@ class CsvReader:
     def clear_data(self):
         self.data.clear()
 
+    @staticmethod
     def int_con(r):
         for key in r:
             r[key] = int(r[key])
