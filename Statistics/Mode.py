@@ -1,4 +1,6 @@
+import statistics
 def mode(x):
+    '''
     count = {}
     mode = []
     highest = 0
@@ -21,3 +23,5 @@ def mode(x):
 
         result = mode
         return result
+        '''
+    return statistics.mode(x)
