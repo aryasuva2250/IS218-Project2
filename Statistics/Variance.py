@@ -1,10 +1,10 @@
-'''
+from Calculator.addition import Addition
 from Calculator.division import Division
 from Calculator.subtraction import Subtraction
 from Calculator.square import Square
 from Statistics.Mean import mean
-'''
-import statistics
+
+#import statistics
 def variance(x):
     '''
     x_mean = mean(x)
@@ -12,4 +12,12 @@ def variance(x):
     #result = Division.division(len(x), sum(Square.square((Subtraction.subtraction(x_mean, x)))))
     return result
     '''
-    return statistics.variance(x)
+    x_mean = mean(x)
+    for value in x:
+        numberator1 = Subtraction.subtraction(x_mean, value)
+        numerator2 = Square.square(numberator1)
+        numerator3 = Addition.addition((numerator2))
+        denominator = Subtraction.subtraction(1, (len(x)))
+        result = Division.division(denominator, numerator3)
+        return result
+    #return statistics.variance(x)
