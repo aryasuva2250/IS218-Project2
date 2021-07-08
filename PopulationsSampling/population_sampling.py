@@ -34,7 +34,7 @@ class PopulationSampling:
     def margin_error(self, l):
         stats = Statistics()
         calculator = Calculator()
-        standard_dev = stats.standard_deviation(l)
+        standard_dev = stats.standard_deviation()
         x = len(l)
         margin_of_error = calculator.multiply(1.96, calculator.sqrt(calculator.divide(calculator.square(standard_dev), x)))
         return margin_of_error
