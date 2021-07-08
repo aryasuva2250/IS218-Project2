@@ -37,13 +37,13 @@ class MyTestCase(unittest.TestCase):
         self.csv_reader = CsvReader('Tests/Data/Square.csv')
         data = self.csv_reader.return_data_as_objects()
         for row in data:
-            self.assertEqual(self.Calculator.squaring(row['Value 1'], row['Value 2']), row['Result'])
+            self.assertEqual(self.Calculator.squaring(row['Value 1']), row['Result'])
 
     def test_square_root_reader(self):
         self.csv_reader = CsvReader('Tests/Data/SquareRoot.csv')
         data = self.csv_reader.return_data_as_objects()
         for row in data:
-            self.assertEqual(self.Calculator.sqrt(row['Value 1'], row['Value 2']), row['Result'])
+            self.assertEqual(self.Calculator.sqrt(row['Value 1']), row['Result'])
     '''
     def test_return_data_as_objects(self):
         people = self.csv_reader.return_data_as_objects('person')
