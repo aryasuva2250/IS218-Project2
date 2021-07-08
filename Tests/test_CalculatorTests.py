@@ -27,7 +27,7 @@ class MyTestCase(unittest.TestCase):
 
 
     def test_multiplication(self):
-        #CsvReader.clear_data(self.testData)
+        CsvReader.clear_data(self.testData)
         testData = CsvReader("Tests/Data/Multiplication.csv").data
         for row in testData:
             result = float(row['Result'])
@@ -37,7 +37,7 @@ class MyTestCase(unittest.TestCase):
 
 
     def test_subtraction(self):
-        #CsvReader.clear_data(self.testData)
+        CsvReader.clear_data(self.testData)
         testData = CsvReader("Tests/Data/Subtraction.csv").data
         for row in testData:
             result = float(row['Result'])
@@ -46,7 +46,7 @@ class MyTestCase(unittest.TestCase):
             pprint(row)
 
     def test_square(self):
-        #CsvReader.clear_data(self.testData)
+        CsvReader.clear_data(self.testData)
         testData = CsvReader("Tests/Data/Square.csv").data
         for row in testData:
             result = float(row['Result'])
@@ -54,7 +54,7 @@ class MyTestCase(unittest.TestCase):
             pprint(row)
 
     def test_square_root(self):
-        #CsvReader.clear_data(self.testData)
+        CsvReader.clear_data(self.testData)
         testData = CsvReader("Tests/Data/SquareRoot.csv").data
         for row in testData:
             result = round(float(row['Result']), 8)
@@ -63,7 +63,7 @@ class MyTestCase(unittest.TestCase):
             pprint(row)
 
     def test_division(self):
-        #CsvReader.clear_data(self.testData)
+        CsvReader.clear_data(self.testData)
         testData = CsvReader("Tests/Data/Division.csv").data
         for row in testData:
             result = round(float(row['Result']), 9)
