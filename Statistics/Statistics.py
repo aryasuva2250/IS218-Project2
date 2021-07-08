@@ -9,8 +9,8 @@ from Statistics.Standard_Deviation import standard_deviation
 class Statistics(Calculator):
     data = []
 
-    def __init__(self, filepath):
-        self.data = CsvReader(filepath)
+    def __init__(self):
+        #self.data = CsvReader(filepath)
         super().__init__()
 
     def mean(self):
