@@ -7,28 +7,28 @@ from Statistics.Variance import variance
 from Statistics.Standard_Deviation import standard_deviation
 
 class Statistics():
-    data = []
+    #data = []
 
     def __init__(self):
         #self.data = CsvReader(filepath)
         super().__init__()
 
-    def mean(self):
-        self.result = mean(self.data)
+    def mean(self, data):
+        self.result = mean(data)
         return self.result
 
-    def median(self):
-        self.result = median(self.data)
+    def median(self, data):
+        self.result = median(data)
         return self.result
 
-    def mode(self):
-        self.result = mode(self.data)
+    def mode(self, data):
+        self.result = mode(data)
         return self.result
 
-    def variance(self):
-        self.result = variance(self.data)
+    def variance(self, data):
+        self.result = variance(data)
         return self.result
 
-    def standard_deviation(self):
-        self.result = standard_deviation(self.data)
+    def standard_deviation(self, data):
+        self.result = standard_deviation(data)
         return self.result
