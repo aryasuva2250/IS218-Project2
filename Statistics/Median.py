@@ -1,5 +1,5 @@
-from Calculator.division import division
-from Calculator.addition import addition
+#from Calculator.division import Division
+#from Calculator.addition import Addition
 #from Calculator.subtraction import subtraction
 def median(x):
     x.sort()
