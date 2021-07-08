@@ -24,7 +24,7 @@ class PopulationSampling:
         #95% confidence interval
         stats = Statistics()
         calculator = Calculator()
-        standard_dev = stats.standard_deviation()
+        standard_dev = stats.standard_deviation(l)
         x = len(l)
         m = stats.mean(l)
         margin_error = calculator.multiply(1.96, (calculator.divide(calculator.sqrt(x), standard_dev)))
@@ -34,7 +34,7 @@ class PopulationSampling:
     def margin_error(self, l):
         stats = Statistics()
         calculator = Calculator()
-        standard_dev = stats.standard_deviation()
+        standard_dev = stats.standard_deviation(l)
         x = len(l)
         margin_of_error = calculator.multiply(1.96, calculator.sqrt(calculator.divide(calculator.square(standard_dev), x)))
         return margin_of_error
